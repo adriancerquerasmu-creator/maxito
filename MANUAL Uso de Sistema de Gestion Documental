@@ -1,0 +1,64 @@
+MANUAL (MN) – Sistema de Gestión Documental SMU Perú (Guía para usuarios)
+1) ¿Qué es el Sistema de Gestión Documental (SGD) y para qué sirve?
+El SGD es el sistema corporativo que permite ordenar, estandarizar, revisar, aprobar y difundir documentos de SMU Perú.
+Funciona con 4 piezas principales que el usuario ve de forma simple:
+•	Maxito (bot): te guía para elegir el tipo de documento y redactar el contenido (te da texto para copiar/pegar).
+•	Forms (formulario de carga): donde subes tu archivo y seleccionas datos (Gerencia, Proceso, Tipo, Difusión, etc.).
+•	SharePoint (repositorio): donde queda guardado el documento y se ve su estado (Status).
+•	Power Automate (flujos): automatiza la revisión, aprobación, alertas y la difusión.
+2) ¿Qué tipo de documentos gestiona el SGD?
+El SGD gestiona 5 tipos (solo para clasificar y estandarizar):
+•	Manual (MN)
+•	Procedimiento (PR)
+•	Instructivo (IN)
+•	Formato (FR)
+•	Protocolo (PT)
+Si no estás seguro del tipo, pregúntale a Maxito y te ayuda a definirlo.
+3) Roles que participan en el SGD
+En un documento típico pueden aparecer estos roles:
+•	Solicitante: persona que sube el documento por Forms (correo en la columna “SolicitanteEmail”).
+•	Revisores: primera etapa; revisan el documento antes de pasar a aprobación final.
+•	Aprobadores: segunda etapa; dan la aprobación final para publicación/difusión.
+Importante: Revisores y Aprobadores se determinan automáticamente según las matrices internas del sistema (por Proceso/Gerencia y reglas definidas).
+4) ¿Qué ve el usuario en el SharePoint?
+El usuario verá el archivo dentro del repositorio con información (metadatos) y una columna Status (estado) que cambia automáticamente según avance el flujo.
+Estados típicos que puede ver el usuario (resumen):
+•	RECEPCIONADO: el sistema recibió el documento desde el Forms.
+•	PREPARANDO_REVISION: el sistema está organizando datos para enviar a revisores.
+•	EN_REVISION: el documento está en etapa de revisores.
+•	OBSERVADO_REVISORES: un revisor observó el documento; requiere corrección.
+•	REVISADO: revisores terminaron; pasa a aprobación.
+•	EN_APROBACION: etapa de aprobadores (aprobación final).
+•	OBSERVADO_APROBADORES: un aprobador observó; requiere corrección.
+•	APROBADO: aprobación final completada.
+•	DOCUMENTO LISTO: listo para cierre y difusión (según corresponda).
+•	DIFUNDIDO: ya se difundió al público seleccionado.
+•	PAUSA MANUAL: caso detenido manualmente (control especial).
+•	EXCESO LIMITE DE TIEMPO: excedió el tiempo máximo definido para completar la aprobación.
+5) ¿Dónde llegan las solicitudes de aprobación?
+Las solicitudes llegan normalmente por correo (Outlook) como “Aprobación”, donde el revisor/aprobador puede Aprobar o Rechazar/Observar con comentario.
+Si alguien dice “no me llegó”, pedirle que revise:
+•	Bandeja de entrada (y pestaña “Otros” si la tiene)
+•	Correo no deseado / Spam
+•	Eliminados
+•	Buscar en Outlook por: “aprobación”, “approval” o por el título del documento
+6) Reglas de tiempo (SLA) y alertas
+El SGD tiene reglas automáticas para evitar que las solicitudes queden “colgadas”:
+•	Etapa Revisores: si pasan 7 días sin respuesta, el sistema puede continuar automáticamente (auto-aprobación de la etapa de revisión).
+•	Etapa Aprobadores: si no responden, el sistema envía alertas al solicitante a los 7, 10 y 15 días para que gestione con sus aprobadores.
+Si llega a 15 días, el caso queda para seguimiento con gerencia (según la regla del sistema).
+7) Difusión del documento (Oficinas / Tiendas / Ambas)
+Cuando el documento está aprobado, se difunde al público indicado en el Forms:
+•	Oficinas → internos_peru@smu.pe
+•	Tiendas → tmayorsa@smu.pe
+•	Ambas → se envía a ambos correos
+El sistema registra el cierre con el estado DIFUNDIDO.
+8) ¿Dónde pedir ayuda?
+Si tienes problemas con formulario, plantillas o comportamiento del flujo, escribe a:
+gestiondocumental@smu.pe
+Links de uso:
+Formulario para subir tu documento:
+[Formulario para subir tu documento](https://bit.ly/FormularioSGD)
+
+Repositorio de Gestion de Documental:
+[Repositorio de Gestion de Documental](https://bit.ly/GestionDocumentalSMU)
